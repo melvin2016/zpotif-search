@@ -1,0 +1,17 @@
+{
+  "name": "musicnode",
+  "version": "1.0.0",
+  "description": "My music webapp",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Melvin George",
+  "license": "ISC",
+  "dependencies": {
+    "oauth": "^0.9.15",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}
