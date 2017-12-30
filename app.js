@@ -16,7 +16,7 @@ app.use('/',indexRoutes);
 //initialising port
 app.set('PORT',(3000 || process.env.PORT));
 //initialisng server on port 8080
-const server = app.listen(3000 || process.env.PORT,()=>{
+const server = app.listen(process.env.PORT || 3000,()=>{
   const port = server.address().port;
   console.log("Server Started On PORT : ",port);
 });
