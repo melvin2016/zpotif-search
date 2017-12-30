@@ -10,6 +10,7 @@
   "author": "Melvin George",
   "license": "ISC",
   "dependencies": {
+    "express":"*",
     "oauth": "^0.9.15",
     "request": "^2.83.0",
     "request-promise": "^4.2.2"
