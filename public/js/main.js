@@ -26,7 +26,7 @@ $('#resultBtn').on('click',()=>{
         $('#resultContent').html(ul);
       }
     };
-    xhr.open('GET',`http://localhost:3000/search/album/${fullQuery}`);
+    xhr.open('GET',`https://meak1.herokuapp.com/search/album/${fullQuery}`);
     xhr.send();
   }
   $('#resultContent').on('click','a',(e)=>{
@@ -57,7 +57,7 @@ $('#resultBtn').on('click',()=>{
           `);
       }
     };
-    xhr.open('GET',`http://localhost:3000/album/${albumIdInput}`);
+    xhr.open('GET',`https://meak1.herokuapp.com/album/${albumIdInput}`);
     xhr.send();
   });
 });
