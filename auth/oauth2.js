@@ -2,8 +2,8 @@
 const OAuth2 = require('oauth').OAuth2;
 
 //vars
-const clientId = 'fc2f96fe1b9f4dd9b7d0bfeaafd1f0b5';
-const clientSecret = '6a359744f6c941f5aa999691e702b5c4';
+const clientId = clientId;
+const clientSecret = clientSecret;
 const oauth2 = new OAuth2(
   clientId,
   clientSecret,
