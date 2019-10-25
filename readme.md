@@ -1,2 +1,2 @@
 #Music App Node.js
-I love this shit !!
+I love Music. <3
