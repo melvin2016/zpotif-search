@@ -1,7 +1,7 @@
 {
-  "name": "musicnode",
+  "name": "zpotif-search",
   "version": "1.0.0",
-  "description": "My music webapp",
+  "description": "Music Searcher app using API from Spotify",
   "main": "app.js",
   "scripts": {
     "start": "node app",
@@ -10,7 +10,7 @@
   "author": "Melvin George",
   "license": "ISC",
   "dependencies": {
-    "express":"*",
+    "express": "*",
     "oauth": "^0.9.15",
     "request": "^2.83.0",
     "request-promise": "^4.2.2"

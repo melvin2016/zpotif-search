@@ -1,4 +1,4 @@
-body{
+body {
   /* background: url("https://images.pexels.com/photos/159376/turntable-top-view-audio-equipment-159376.jpeg") no-repeat center center fixed ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -9,43 +9,42 @@ body{
   padding: 0px;
   margin: 0px;
 }
-#gradient
-{
+#gradient {
   width: 100%;
   height: auto;
   padding: 0px;
   margin: 0px;
 }
-#title{
-  color:#fff;
+#title {
+  color: #fff;
   letter-spacing: 20px;
 }
-#resultBar{
+#resultBar {
   max-width: inherit;
-  margin:20px auto;
-  padding:10px;
+  margin: 20px auto;
+  padding: 10px;
   background-color: grey;
   border-radius: 10px;
   color: #fff;
 }
-#links a.secure:after{
-  content:'Safe';
+#links a.secure:after {
+  content: "Safe";
   background-color: green;
   color: white;
   margin: 5px;
   border-radius: 3px;
   padding: 5px;
 }
-#links a.nonSecure:after{
-  content:'Not Safe';
+#links a.nonSecure:after {
+  content: "Not Safe";
   background-color: red;
   color: white;
   margin: 5px;
   border-radius: 3px;
   padding: 5px;
 }
-#links a.pdf:after{
-  content:'PDF';
+#links a.pdf:after {
+  content: "PDF";
   background-color: purple;
   color: white;
   margin: 5px;
@@ -53,10 +52,9 @@ body{
   padding: 5px;
 }
 
-
-#links a{
+#links a {
   margin: 2px;
   padding: 8px;
-  border: 1px  solid;
+  border: 1px solid;
   border-radius: 5px;
 }

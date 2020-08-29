@@ -1,26 +1,30 @@
 //core modules
-const OAuth2 = require('oauth').OAuth2;
+const OAuth2 = require("oauth").OAuth2;
 
 //vars
-const clientId = clientId;
-const clientSecret = clientSecret;
+const clientId = process.env.clientId;
+const clientSecret = process.env.clientSecret;
 const oauth2 = new OAuth2(
   clientId,
   clientSecret,
-  'https://accounts.spotify.com/',
+  "https://accounts.spotify.com/",
   null,
-  'api/token',
-  null);
+  "api/token",
+  null
+);
 //make gotAuth promise
-const gotAuth = new Promise((resolve,reject)=>{
-  oauth2.getOAuthAccessToken('',{'grant_type':'client_credentials'},
-    (err, access_token, refresh_token,results)=>{
-      if(access_token){
+const gotAuth = new Promise((resolve, reject) => {
+  oauth2.getOAuthAccessToken(
+    "",
+    { grant_type: "client_credentials" },
+    (err, access_token, refresh_token, results) => {
+      if (access_token) {
         resolve(access_token);
-      }else if(err){
+      } else if (err) {
         reject(err);
       }
-   });
+    }
+  );
 });
 
 module.exports = gotAuth;

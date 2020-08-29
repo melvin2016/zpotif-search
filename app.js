@@ -1,22 +1,20 @@
 //requiring core modules
-const express = require('express');
-const path = require('path');
+const express = require("express");
+const path = require("path");
 
 //requiring custom modules
-const indexRoutes = require('./routes/index.routes');
+const indexRoutes = require("./routes/index.routes");
 //initialisong express app
 const app = express();
 
 //Middlewares
-app.use(express.static(path.join(__dirname,'public')));
-app.use('/',indexRoutes);
-
-
+app.use(express.static(path.join(__dirname, "public")));
+app.use("/", indexRoutes);
 
 //initialising port
-app.set('PORT',(4000 || process.env.PORT));
+app.set("PORT", 4000 || process.env.PORT);
 //initialisng server on port 8080
-const server = app.listen(process.env.PORT||4000,()=>{
+const server = app.listen(process.env.PORT || 4000, () => {
   const port = server.address().port;
-  console.log("Server Started On PORT : ",port);
+  console.log("Server Started On PORT : ", port);
 });
